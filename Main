@@ -1,0 +1,6 @@
+$.ajax({
+  url: "https://example.com/page1",
+  success: function(html) {
+    // Parse the HTML content using jQuery selectors
+    var title = $(html).find("title").text();
+    var paragraphs = $(html).find("p").text();
